@@ -37,7 +37,7 @@ class BookDetailsViewBody extends StatelessWidget {
                 .copyWith(color: Colors.grey, fontStyle: FontStyle.italic),
           ),
           SizedBox(
-            height: 10.h,
+            height: 18.h,
           ),
           const BookRating()
         ],
