@@ -7,16 +7,20 @@ class FeaturedBooksListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 250.h,
-      child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) {
-            return Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.w),
-              child: const CustomListViewItem(),
-            );
-          }),
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 12.w),
+      child: SizedBox(
+        height: 250.h,
+        child: ListView.builder(
+            padding: EdgeInsets.zero,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: EdgeInsets.only(right: 12.w),
+                child: const CustomListViewItem(),
+              );
+            }),
+      ),
     );
   }
 }
