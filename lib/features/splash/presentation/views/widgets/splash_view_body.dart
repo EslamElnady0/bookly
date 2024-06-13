@@ -1,8 +1,8 @@
 import 'package:bookly/core/util/app_router.dart';
+import 'package:bookly/core/util/extentions.dart';
 import 'package:bookly/features/splash/presentation/views/widgets/silding_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -46,7 +46,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHome() {
     Future.delayed(const Duration(seconds: 2), () {
-      GoRouter.of(context).push(AppRouter.home);
+      context.goTo(AppRouter.home);
     });
   }
 
