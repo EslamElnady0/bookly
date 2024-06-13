@@ -7,9 +7,9 @@ class CustomListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 280.h,
+      height: 250.h,
       child: AspectRatio(
-        aspectRatio: 3 / 5,
+        aspectRatio: 3.15 / 5,
         child: Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16.r),
