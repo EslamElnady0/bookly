@@ -10,6 +10,8 @@ class SplashViewBody extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Image.asset("assets/images/Logo.png"),
+
+        ///
         const SizedBox(
           height: 5,
         ),
