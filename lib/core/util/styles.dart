@@ -5,9 +5,9 @@ abstract class Styles {
   static TextStyle textStyle18 =
       TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600);
   static TextStyle textStyle20 = TextStyle(
-      fontSize: 20.sp,
-      fontWeight: FontWeight.normal,
-      fontFamily: "GT Sectra Fine");
+    fontSize: 20.sp,
+    fontWeight: FontWeight.normal,
+  );
   static TextStyle textStyle30 = TextStyle(
       fontSize: 30.sp,
       fontWeight: FontWeight.normal,
