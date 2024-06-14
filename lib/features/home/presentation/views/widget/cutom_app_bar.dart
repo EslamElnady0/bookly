@@ -1,3 +1,5 @@
+import 'package:bookly/core/util/app_router.dart';
+import 'package:bookly/core/util/extentions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,9 +17,14 @@ class CustomAppBar extends StatelessWidget {
             height: 20.h,
           ),
           const Spacer(),
-          Icon(
-            Icons.search,
-            size: 24.r,
+          InkWell(
+            onTap: () {
+              context.goTo(AppRouter.search);
+            },
+            child: Icon(
+              Icons.search,
+              size: 24.r,
+            ),
           )
         ],
       ),
