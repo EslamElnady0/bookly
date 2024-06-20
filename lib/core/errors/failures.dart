@@ -24,11 +24,10 @@ class ServerFailure extends Failure {
       case DioExceptionType.sendTimeout:
         return ServerFailure(
             errMessage: "Send timeout in connection with API server");
+      case DioExceptionType.connectionError:
+        return ServerFailure(errMessage: "No internet connection");
 
       case DioExceptionType.unknown:
-        if (dioException.message!.contains("SocketException")) {
-          return ServerFailure(errMessage: "No internet connection");
-        }
         return ServerFailure(errMessage: "Unexpected error occurred");
       default:
         return ServerFailure(errMessage: "Something went wrong");
