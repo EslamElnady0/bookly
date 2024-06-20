@@ -15,7 +15,12 @@ class SimilarBooksListView extends StatelessWidget {
           itemBuilder: (context, index) {
             return Padding(
               padding: EdgeInsets.only(right: 12.w),
-              child: SizedBox(height: 250.h, child: const CustomBookImage()),
+              child: SizedBox(
+                  height: 250.h,
+                  child: const CustomBookImage(
+                    imageUrl:
+                        "https://images.pexels.com/photos/762687/pexels-photo-762687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                  )),
             );
           }),
     );

@@ -21,11 +21,17 @@ class FeaturedBooksListView extends StatelessWidget {
               child: ListView.builder(
                   padding: EdgeInsets.zero,
                   scrollDirection: Axis.horizontal,
+                  itemCount: state.books.length,
+                  physics: const BouncingScrollPhysics(),
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: EdgeInsets.only(right: 12.w),
                       child: SizedBox(
-                          height: 250.h, child: const CustomBookImage()),
+                          height: 250.h,
+                          child: CustomBookImage(
+                            imageUrl: state.books[index].volumeInfo!.imageLinks!
+                                .thumbnail!,
+                          )),
                     );
                   }),
             ),
