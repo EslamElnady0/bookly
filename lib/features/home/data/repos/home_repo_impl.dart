@@ -16,7 +16,7 @@ class HomeRepoImpl implements HomeRepo {
               "volumes?q=subject:programming&Filtering=free-ebooks&Sorting=newest");
       List<BookModel> books = [];
       for (var book in data["items"]) {
-        books.add(book);
+        books.add(BookModel.fromJson(book));
       }
       return right(books);
     } catch (e) {
@@ -35,7 +35,7 @@ class HomeRepoImpl implements HomeRepo {
           endPoint: "volumes?q=subject:programming&Filtering=free-ebooks");
       List<BookModel> books = [];
       for (var book in data["items"]) {
-        books.add(book);
+        books.add(BookModel.fromJson(book));
       }
       return right(books);
     } catch (e) {
