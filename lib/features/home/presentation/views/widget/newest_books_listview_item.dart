@@ -8,9 +8,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/util/styles.dart';
 import '../../../../../core/models/book/book_model.dart';
 
-class NewestBooksListViewItem extends StatelessWidget {
+class BooksListViewItem extends StatelessWidget {
   final BookModel bookModel;
-  const NewestBooksListViewItem({super.key, required this.bookModel});
+  const BooksListViewItem({super.key, required this.bookModel});
 
   @override
   Widget build(BuildContext context) {
