@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/util/styles.dart';
-import '../../../data/models/book/book_model.dart';
+import '../../../../../core/models/book/book_model.dart';
 
 class NewestBooksListViewItem extends StatelessWidget {
   final BookModel bookModel;

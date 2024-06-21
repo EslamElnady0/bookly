@@ -1,6 +1,6 @@
 import 'package:bookly/core/util/app_router.dart';
 import 'package:bookly/core/util/extentions.dart';
-import 'package:bookly/features/home/data/models/book/book_model.dart';
+import 'package:bookly/core/models/book/book_model.dart';
 import 'package:bookly/features/home/presentation/manager/similar%20books%20cubit/similar_books_cubit.dart';
 import 'package:bookly/features/home/presentation/views/widget/custom_book_image.dart';
 import 'package:bookly/features/home/presentation/views/widget/custom_error_widget.dart';

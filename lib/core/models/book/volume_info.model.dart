@@ -1,7 +1,7 @@
-import 'package:bookly/features/home/data/models/book/image_links.model.dart';
-import 'package:bookly/features/home/data/models/book/industry_identifier.model.dart';
-import 'package:bookly/features/home/data/models/book/panelization_summary.model.dart';
-import 'package:bookly/features/home/data/models/book/reading_modes.model.dart';
+import 'package:bookly/core/models/book/image_links.model.dart';
+import 'package:bookly/core/models/book/industry_identifier.model.dart';
+import 'package:bookly/core/models/book/panelization_summary.model.dart';
+import 'package:bookly/core/models/book/reading_modes.model.dart';
 import 'package:equatable/equatable.dart';
 
 class VolumeInfo extends Equatable {
