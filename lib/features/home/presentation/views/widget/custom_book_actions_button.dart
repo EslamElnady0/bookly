@@ -5,17 +5,19 @@ class CustomBookActionsButton extends StatelessWidget {
   final Color color;
   final TextStyle textStyle;
   final String text;
+  final void Function()? onPressed;
   const CustomBookActionsButton(
       {super.key,
       required this.borderRadius,
       required this.color,
       required this.textStyle,
-      required this.text});
+      required this.text,
+      this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: TextButton.styleFrom(
           backgroundColor: color,
           shape: RoundedRectangleBorder(borderRadius: borderRadius)),
