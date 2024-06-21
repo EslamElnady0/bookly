@@ -22,12 +22,9 @@ class NewestBooksListView extends StatelessWidget {
           itemCount: state.books.length,
           itemBuilder: (context, index) {
             return Padding(
-              padding: EdgeInsets.symmetric(vertical: 10.h),
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 12.w),
-                child: BooksListViewItem(
-                  bookModel: state.books[index],
-                ),
+              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),
+              child: BooksListViewItem(
+                bookModel: state.books[index],
               ),
             );
           },
