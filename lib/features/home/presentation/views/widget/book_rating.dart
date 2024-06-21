@@ -5,8 +5,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../../core/util/styles.dart';
 
 class BookRating extends StatelessWidget {
-  final int rating;
-  final int count;
+  final num rating;
+  final num count;
   const BookRating({super.key, required this.rating, required this.count});
 
   @override

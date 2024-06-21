@@ -19,7 +19,7 @@ class CustomAppBar extends StatelessWidget {
           const Spacer(),
           InkWell(
             onTap: () {
-              context.goTo(AppRouter.search);
+              context.goTo(routeName: AppRouter.search);
             },
             child: Icon(
               Icons.search,

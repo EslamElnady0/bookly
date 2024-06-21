@@ -13,7 +13,7 @@ class BookActions extends StatelessWidget {
         Expanded(
           child: CustomBookActionsButton(
               color: Colors.white,
-              text: r"19.99$",
+              text: r"Free",
               textStyle: Styles.textStyle16
                   .copyWith(color: Colors.black, fontWeight: FontWeight.bold),
               borderRadius: BorderRadius.only(
@@ -22,7 +22,7 @@ class BookActions extends StatelessWidget {
         ),
         Expanded(
             child: CustomBookActionsButton(
-          text: "Free Preview",
+          text: "Preview",
           color: const Color.fromARGB(255, 241, 143, 143),
           borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(16.r),

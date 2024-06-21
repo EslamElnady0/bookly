@@ -16,7 +16,7 @@ class NewestBooksListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.goTo(AppRouter.bookDetails);
+        context.goTo(routeName: AppRouter.bookDetails, extra: bookModel);
       },
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
